@@ -3,8 +3,8 @@
 - Update tfl.api.key to have your own tfl.api.key in place of the "<YOUR_KEY_HERE>"
 
 How to run (non-docker):
-- to create a jar in the target directory, run the command: mvn clean install -U
-- run the command from where you have checked the project out to: mvn spring-boot:start
+- run the command from where you checked out to: mvn clean install -U
+- run the command: mvn spring-boot:start
 - open a browser window
 - investgiate roads you are interested in, some examples:
     - http://localhost:8080/api/v1/road/a101
@@ -12,6 +12,7 @@ How to run (non-docker):
     - http://localhost:8080/api/v1/road/a1
 
 How to run (docker) - assumption is that you have a local docker setup:
+- run the command from where you checked out to: mvn clean install -U
 - run the command: docker build --tag codingchallenge:v1.0.0 .
 - run the command: docker run -it --expose 8080 -p 8080:8080 localhost/codingchallenge:v1.0.0
 - open a browser window
